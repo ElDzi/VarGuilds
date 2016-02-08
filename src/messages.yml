@@ -1,0 +1,86 @@
+# <-------- Main messages --------> #
+# Message when player has not permission to do something
+permissionMessage: '&cYou do not have permission to do that.'
+# Message when sender is not player
+needPlayer: '&cYou must be player to run this command.'
+# Message when player used wrong command
+# Available variables: {COMMAND}
+commandUsage: '&cPoprawne uzycie: &7{USAGE}.'
+# Available variables: {PLAYER}
+neverPlayed: '&cGracz &8{PLAYER} &cnigdy nie gral na tym serwerze.'
+
+# <-------- Rank command --------> #
+# Available variables: {PLAYER}, {RANK}, {KILLS}, {DEATHS}
+rank:
+  - '&7----------'
+  - '&8Nick: &3{PLAYER}'
+  - '&8Punkty: &3{RANK}'
+  - '&8Zabicia: &3{KILLS}'
+  - '&8Zgony: &3{DEATHS}'
+  - '&7----------'
+
+# <-------- Guild command --------> #
+commandList:
+  - '&7[]--------[&3varGuilds&7]--------[]'
+  - '&7[&6»&7] &3/zaloz [nazwa] [tag] &8- &7Zaklada gildie'
+  - '&7[&6»&7] &3/rozwiaz &8- &7Rozwiazuje gildie'
+  - '&7[&6»&7] &3/lider [gracz] &8- &7Oddaje lidera gildii'
+  - '&7[&6»&7] &3/zastepca [gracz] &8- &7Mianuje zastepca gildii'
+  - '&7[&6»&7] &3/dom &8- &7Teleportuje do domu gildii'
+  - '&7[&6»&7] &3/ustaw &8- &7Ustawia dom gildii'
+  - '&7[&6»&7] &3/opusc &8- &7Opuszcza gildie'
+  - '&7[&6»&7] &3/zapros [gracz] &8- &7Zaprasza gracza do gildii'
+  - '&7[&6»&7] &3/wyrzuc [gracz] &8- &7Wyrzuca gracza z gildii'
+  - '&7[&6»&7] &3/sojusz [tag] &8- &7Zaprasza do sojuszu'
+  - '&7[&6»&7] &3/neutral [tag] &8- &7Zaprasza do neutralnych stosunkow'
+  - '&7[]--------[&3varGuilds&7]--------[]'
+
+# <-------- Create command --------> #
+create:
+  hasGuild: '&cJestes juz w jakiejs gildii.'
+  # Available variables: {TAG}
+  tagExists: '&cGildia o tagu: &3{TAG} &cjuz istnieje.'
+  # Available variables: {NAME}
+  nameExists: '&cGildia o nazwie: &3{NAME} &cjuz istnieje.'
+  # Available variables: {LENGTH}
+  invalidTag: '&cTag musi miec &3{LENGTH} &cznaki/ow i moze zawierac tylko litery.'
+  # Available variables: {LENGTH}
+  invalidName: '&cNazwa moze miec maksymalnie &3{LENGTH} &cznaki/ow i moze zawierac tylko litery.'
+  isIn: '&cW tym miejscu znajduje sie inna gildia.'
+  # Available variables: {DISTANCE}
+  isNear: '&cJestes zbyt blisko innej gildii.'
+  # Available variables: {DISTANCE}
+  spawnDistance: '&cMinimalna odleglosc od spawna do zalozenia gildii wynosi &3{DISTANCE} &ckratek/i.'
+  noItems:
+    - '&cNie masz wystarczajacych przedmiotow na zalozenie gildii.'
+    - '&cUzyj komendy &3/itemy &caby zobaczyc czego Ci brakuje.'
+  # Available variables: {NAME}, {TAG}
+  success: '&eUdalo Ci sie zalozyc gildie o nazwie: &a{NAME} &ei tagu: &a{TAG}'
+  # Available variables: {PLAYER}, {NAME}, {TAG}
+  broadcast: '&7[&c»&7] &8{PLAYER} &7zalozyl gildie: &a{NAME} &8[&3{TAG}&8].'
+
+# <-------- Delete command --------> #
+delete:
+  noGuild: '&cNie jestes w zadnej gildii.'
+  # Available variables: {LEADER}
+  notLeader: '&cAby rozwiazac gildie musisz byc liderem.'
+  confirm:
+    - '&cJestes tego pewny?'
+    - '&cWpisz &3/potwierdz &caby usunac gildie.'
+  noConfirm: '&cNie masz nic do potwierdzenia.'
+  # Available variables: {NAME}, {TAG}
+  success: '&eUdalo Ci sie usunac gildie.'
+  # Available variables: {PLAYER}, {NAME}, {TAG}
+  broadcast: '&7[&c»&7] &8{PLAYER} &7rozwiazal gildie: &a{NAME} &8[&3{TAG}&8].'
+
+# <-------- Leader command --------> #
+leader:
+  noGuild: '&cNie jestes w zadnej gildii.'
+  # Available variables: {LEADER}
+  notLeader: '&cAby mianowac kogos liderem gildii musisz miec uprawnienia lidera.'
+  # Available variables: {PLAYER}
+  notInGuild: '&cGracz &8{PLAYER} &cnie jest w Twojej gildii.'
+  # Available variables: {PLAYER}
+  success: '&ePrzekazales tytul lidera graczowi: &a{PLAYER}'
+  # Available variables: {NAME}, {TAG}, {PLAYER}, {SECOND}
+  broadcast: '&7[&c»&7] &8{PLAYER} &7przekazal tytul lidera graczowi: &3{SECOND}.'

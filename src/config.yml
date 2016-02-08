@@ -1,0 +1,80 @@
+# <-------- User --------> #
+user:
+  start-points: 1000
+  protect-enabled: true # True if start protect is to be enabled
+  protect-time: 24 # Time of protect in hours
+
+# <-------- Guild --------> #
+guild:
+  items: # Items needed to create guild
+    - 'diamond@32'
+    - 'tnt@15'
+  # Length of tag
+  tag-length: 4
+  # Max length of characters in name of guild
+  name-max-length: 30
+  # Size of guild after create
+  size: 50
+  # Distance from other guild needed to create guild
+  minDistance: 75
+  # Distance from spawn needed to create guild
+  spawnDistance: 250
+  # Time to confirm by user to delete guild (in seconds)
+  confirm-time: 60
+
+
+# <-------- Store --------> #
+store:
+  mysql: false
+  flatfile: true
+
+# <-------- AutoSave --------> #
+autosave:
+  enabled: true
+  time: 15
+
+# <-------- Tablist --------> #
+tablist:
+  enabled: true
+  refresh: 1
+  # Available variables:
+  # Ranking: $ - index {G$NAME}, {G$TAG}, {P$NAME}, {P$RANK}
+  # Player: {PLAYER}, {RANK}, {KILLS}, {DEATHS}, {POSITION}
+  # Guild: {NAME}, {TAG}, {LEADER}, {DEPUTY}, {SIZE}, {GPOS}, {POINTS}, {LIVES}, {PVP}, {CREATED}
+  cells:
+    2: '&9&lTOP GILDII'
+    4: '&71. &e{G1NAME} &8[&c{G1TAG}&8]'
+    5: '&72. &e{G2NAME} &8[&c{G2TAG}&8]'
+    6: '&73. &e{G3NAME} &8[&c{G3TAG}&8]'
+    7: '&74. &e{G4NAME} &8[&c{G4TAG}&8]'
+    8: '&75. &e{G5NAME} &8[&c{G5TAG}&8]'
+    9: '&76. &e{G6NAME} &8[&c{G6TAG}&8]'
+    10: '&77. &e{G7NAME} &8[&c{G7TAG}&8]'
+    11: '&78. &e{G8NAME} &8[&c{G8TAG}&8]'
+    12: '&79. &e{G9NAME} &8[&c{G9TAG}&8]'
+    13: '&710. &e{G10NAME} &8[&c{G10TAG}&8]'
+    22: '&9&lINFORMACJE'
+    24: '&7Nick: &e{PLAYER}'
+    25: '&7Punkty: &e{RANK}'
+    26: '&7Zabicia: &e{KILLS}'
+    27: '&7Smierci: &e{DEATHS}'
+    28: '&7Pozycja: &e{POSITION}'
+    42: '&9&lGILDIA'
+    44: '&7Tag: &e{TAG}'
+    45: '&7Lider: &e{LEADER}'
+    46: '&7Rozmiar: &e{SIZE}'
+    47: '&7Punkty: &e{POINTS}'
+    48: '&7Zycia: &e{LIVES}'
+    49: '&7Pvp: &e{PVP}'
+    50: '&7Pozycja: &e{GPOS}'
+    62: '&9&lTOP GRACZY'
+    64: '&71. &e{P1NAME} &8[&c{P1RANK}&8]'
+    65: '&72. &e{P2NAME} &8[&c{P2RANK}&8]'
+    66: '&73. &e{P3NAME} &8[&c{P3RANK}&8]'
+    67: '&74. &e{P4NAME} &8[&c{P4RANK}&8]'
+    68: '&75. &e{P5NAME} &8[&c{P5RANK}&8]'
+    69: '&76. &e{P6NAME} &8[&c{P6RANK}&8]'
+    70: '&77. &e{P7NAME} &8[&c{P7RANK}&8]'
+    71: '&78. &e{P8NAME} &8[&c{P8RANK}&8]'
+    72: '&79. &e{P9NAME} &8[&c{P9RANK}&8]'
+    73: '&710. &e{P10NAME} &8[&c{P10RANK}&8]'
